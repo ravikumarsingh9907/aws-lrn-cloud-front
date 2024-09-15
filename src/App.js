@@ -1,9 +1,4 @@
 import './App.css';
-import firstVideo from "./assets/first.mp4"
-import secondVideo from "./assets/second.mp4"
-import thirdVideo from "./assets/third.mp4"
-import firstImage from "./assets/first.jpg"
-import secondImage from "./assets/second.jpg"
 
 function App() {
   return (
@@ -12,24 +7,24 @@ function App() {
       <ul className='w-full flex flex-col gap-4'>
         <li className="flex justify-center">
           <video width="510" height="720" autoPlay muted loop>
-            <source src={firstVideo} type='video/mp4'/>
+            <source src="https://react-cloudfront-demo.s3.amazonaws.com/assets/first.mp4" type='video/mp4'/>
           </video>
         </li>
         <li className='flex justify-center'>
           <video width="510" height="720" autoPlay muted loop>
-            <source src={secondVideo} type='video/mp4'/>
+            <source src="https://react-cloudfront-demo.s3.amazonaws.com/assets/second.mp4" type='video/mp4'/>
           </video>
         </li>
         <li className='flex justify-center'>
           <video width="510" height="720" autoPlay muted loop>
-            <source src={thirdVideo} type='video/mp4'/>
+            <source src="https://react-cloudfront-demo.s3.amazonaws.com/assets/third.mp4" type='video/mp4'/>
           </video>
         </li>
         <li className='flex justify-center'>
-          <img className='h-72 w-1/3' src={firstImage} alt='firstimagename' />
+          <img className='h-72 w-1/3' src="https://react-cloudfront-demo.s3.amazonaws.com/assets/first.jpg" alt='firstimagename' />
         </li>
         <li className='flex justify-center'>
-          <img className='h-72 w-1/3' src={secondImage} alt='secondimagename' />
+          <img className='h-72 w-1/3' src="https://react-cloudfront-demo.s3.amazonaws.com/assets/second.jpg" alt='secondimagename' />
         </li>
       </ul>
     </div>
